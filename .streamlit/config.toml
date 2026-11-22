@@ -1,0 +1,15 @@
+# Tema del tablero. Se fija en claro porque el CSS de dashboard/estilo.py reproduce la maqueta
+# (fondo claro). Sin esto, Streamlit sigue el modo oscuro del sistema y deja etiquetas, campos,
+# botones y gráficas en colores oscuros sobre el fondo claro (ilegibles).
+# Streamlit lee este archivo cuando se ejecuta desde la raíz del repositorio:
+#   streamlit run dashboard/tablero.py
+[theme]
+base = "light"
+primaryColor = "#0E7C4A"
+backgroundColor = "#F5F6F4"
+secondaryBackgroundColor = "#FFFFFF"
+textColor = "#101814"
+
+[client]
+# Oculta «Deploy» y las opciones de desarrollador del menú: el tablero es para operación.
+toolbarMode = "minimal"
